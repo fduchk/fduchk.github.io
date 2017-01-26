@@ -1,0 +1,35 @@
+.wrap {
+ display: flex;
+ flex-flow: row wrap;
+}
+header, footer, aside, article, section {
+ flex: 1 100%;
+}
+@media (min-width: 768px) {
+/*    .wrap {width: 750px;} */
+    aside {flex: 0 1 220px;}
+    article {flex: 1;}
+    section {flex: 1 50%;}
+}
+@media (min-width: 1200px) {
+    .wrap {width: 1170px;
+     margin-left: auto;
+     margin-right: auto;}
+    aside {width: 220px;}
+    article {width: 950px;}
+    section {flex: 1 33.3333%;}
+}
+header {
+ background: tomato;
+}
+aside {
+ background: gold;
+}
+article {
+ display: flex;
+ flex-flow: row wrap;
+ background: blue;
+}
+footer {
+ background: lightgreen;
+}
